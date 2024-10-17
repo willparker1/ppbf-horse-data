@@ -1,0 +1,7 @@
+betfair:
+  # Live app key
+  applicationKey: P3cJuPs8scH2xYTl
+
+  keyStore:
+    path: C:\dev\openssl\client-2048.p12
+    password: norrie

@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/horses
+    username: porker
+    password: 4Norrie!
+
+logging:
+  trace: false # Set to true to enable trace logging. Note: This will log teh response body of all requests, so if the code attempts to read teh response body it will throw exception as can only be read once.
+  file:
+    name: c:/dev/logs/porkerspicks.log
+    level: debug
+
+server:
+  port: 8080
+  
+betfair:
+  keyStore:
+    path: C:\dev\openssl\client-2048.p12
+    password: norrie
+
+debug: false

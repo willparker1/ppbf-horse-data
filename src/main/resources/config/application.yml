@@ -1,0 +1,45 @@
+#management:
+#  server:
+#    port: 8093
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: "always"
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: ppbf
+  datasource:
+    tomcat.max-wait: 20000
+    tomcat.max-active: 50
+    tomcat.max-idle: 20
+    tomcat.min-idle: 15
+  jpa:
+    hibernate:
+      ddl-auto: create
+  jackson:
+    mapper:
+      accept_case_insensitive_properties: true
+file:
+  dateFormat: "yyyyMMdd"
+  timeFormat: "HHmmss"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: httptrace
+
+logging:
+  config: classpath:logback-spring.xml
+
+mail:
+  from: error@porkerspicks.com
+  to:   wullparker@gmail.com
+
+debug: false

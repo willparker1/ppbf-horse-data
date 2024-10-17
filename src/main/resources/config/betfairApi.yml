@@ -1,0 +1,22 @@
+betfair:
+  encoding: UTF-8
+  contentType: application/json
+  timeOut: 10000
+
+  username: willparker
+  password: 4Norrie!
+
+  authUrl: https://identitysso-cert.betfair.com/api/certlogin
+  apiUrl: https://api.betfair.com/exchange/betting/rest/v1.0/
+  volumeOverTimeUrl: https://graphs.betfair.com/loadRunnerChart?marketId=1.234378192&selectionId=15736312&handicap=0&alt=json
+
+  # Delayed development  app key
+  # applicationKey: PxHjgosvi9wXxzYM
+  # Live app key
+  applicationKey: P3cJuPs8scH2xYTl
+
+  sessionId: SGFz0GFDfZd2c2BwtFeaUPNbrqxocK9JhLbOjdDfceA=
+
+  keyStore:
+    path: C:\dev\openssl\client-2048.p12
+    password: norrie

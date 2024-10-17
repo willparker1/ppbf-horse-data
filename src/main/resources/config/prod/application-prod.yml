@@ -1,0 +1,26 @@
+#management:
+#  server:
+#    port: 8093
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: "always"
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/horses
+    username: porker
+    password: porker
+
+logging:
+  trace: false # Set to true to enable trace logging. Note: This will log teh response body of all requests, so if the code attempts to read teh response body it will throw exception as can only be read once.
+  file:
+    name: c:/dev/logs/porkerspicks.log
+    level: debug
+
+file:
+  basePath: "C:\\betfair\\json\\"
+
+debug: false

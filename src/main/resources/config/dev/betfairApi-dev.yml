@@ -1,0 +1,7 @@
+betfair:
+  # Delayed development  app key
+  applicationKey: PxHjgosvi9wXxzYM
+
+  keyStore:
+    path: C:\dev\openssl\client-2048.p12
+    password: norrie
