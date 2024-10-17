@@ -1,13 +1,10 @@
 package com.porkerspicks.ppbf;
 
-import com.porkerspicks.ppbf.file.FileStorage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.stereotype.Component;
 
-@SpringBootApplication(scanBasePackages = {"com.porkerspicks","com.betfair"} )
+@SpringBootApplication(scanBasePackages = {"com.porkerspicks"} )
 @ConfigurationPropertiesScan("com.porkerspicks.ppbf")
 public class PpbfApplication {
 
